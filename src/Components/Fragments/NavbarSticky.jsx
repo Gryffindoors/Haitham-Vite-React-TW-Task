@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
+
+
 
 export default function NavbarSticky({ isHidden }) {
-    
+
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
@@ -49,29 +53,33 @@ export default function NavbarSticky({ isHidden }) {
                             <i className="fa-solid fa-xmark"></i>
                         </button>
 
+
                         <ul className="font-medium flex flex-col md:flex-row items-center p-4 md:p-0 mt-4 md:mt-0 space-y-2 md:space-y-0 md:space-x-8 rtl:space-x-reverse bg-transparent me-5">
                             <li>
-                                <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Home</a>
+                                <Link to="/#Home" className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Home</Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">About</a>
+                                <Link to="/#About" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">About</Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">Department</a>
+                                <Link to="/#Departments" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">Department</Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">Doctors</a>
+                                <Link to="/#Doctors" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">Doctors</Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">Blog</a>
+                                <Link to="/#Blog" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">Blog</Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">Contact</a>
+                                <Link to="/#Contact" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500">Contact</Link>
                             </li>
                             <li>
-                                <button type="button" className="focus:outline-none text-white bg-red-400 hover:bg-blue-800 focus:ring-4 focus:ring-red-300 font-medium rounded-md text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700">Appointment</button>
+                                <button type="button" className="focus:outline-none text-white bg-red-400 hover:bg-blue-800 focus:ring-4 focus:ring-red-300 font-medium rounded-md text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700">
+                                    <Link to="/appointment#Services">Appointment</Link>
+                                </button>
                             </li>
                         </ul>
+
                     </div>
                 </div>
             </nav>

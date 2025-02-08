@@ -47,7 +47,7 @@ const DoctorStaff = [
 export default function Doctors() {
   return <>
 
-    <div className="w-full py-20 px-20 flex flex-col items-center gap-10 bg-white">
+    <div className="w-full py-20 px-20 flex flex-col items-center gap-10 bg-white" id='Doctors'>
         <h2 className='text-black font-black text-5xl'>Our Qualified Doctors</h2>
         <p className='text-gray-400 w-1/2 text-center text-lg'>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
         <div className='grid grid-cols-4 gap-5'>

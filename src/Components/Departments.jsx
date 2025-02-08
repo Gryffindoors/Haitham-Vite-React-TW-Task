@@ -53,7 +53,7 @@ const deparmtentImage = "/images/dept-1.jpg.webp"
 
 export default function Departments() {
     return <>
-        <div className="w-full">
+        <div className="w-full" id='Departments'>
             <div className="flex">
                 <div className="hidden md:block w-2/5 relative overflow-hidden">
                     <img

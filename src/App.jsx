@@ -1,19 +1,16 @@
-import Header from './Components/Home'
-import About from './Components/About'
-import Services from './Components/Services'
-import Places from './Components/Fragments/Places'
-import Departments from './Components/Departments'
-import Doctors from './Components/Doctors'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Main from "./Pages/Main";
+import Appoint from "./Pages/Appoint";
 
 function App() {
-  return <>
-    <Header />
-    <About />
-    <Services />
-    <Places />
-    <Departments />
-    <Doctors />
-  </>
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/appointment" element={<Appoint />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
