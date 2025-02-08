@@ -1,4 +1,4 @@
-import Header from './Components/Header'
+import Header from './Components/Home'
 import About from './Components/About'
 import Services from './Components/Services'
 import Places from './Components/Fragments/Places'
@@ -7,7 +7,6 @@ import Doctors from './Components/Doctors'
 
 function App() {
   return <>
-  {/* header */}
     <Header />
     <About />
     <Services />
