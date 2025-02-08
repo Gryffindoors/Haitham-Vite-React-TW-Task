@@ -63,7 +63,7 @@ export default function AppointmentForm() {
 
             {/* Select Menu (Services) */}
             <div className="relative">
-              <select className="w-full rounded-full border-2 border-gray-300 p-3 text-gray-500 transition-all duration-300 hover:bg-gray-100 focus:outline-none focus:border-blue-400 focus:scale-105">
+              <select className="w-full rounded-full border-2 border-gray-300 p-3 text-gray-400 transition-all duration-300 hover:bg-gray-100 focus:outline-none focus:border-blue-400 focus:scale-105">
                 <option value="" disabled className="text-gray-400">Select your service</option>
                 <option value="Neurology">Neurology</option>
                 <option value="Cardiology">Cardiology</option>

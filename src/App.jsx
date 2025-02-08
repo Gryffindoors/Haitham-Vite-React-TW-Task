@@ -1,8 +1,9 @@
-import Header from './Components/Header'
+import Header from './Components/header'
 import About from './Components/About'
 import Services from './Components/Services'
 import Places from './Components/Fragments/Places'
 import Departments from './Components/Departments'
+import Doctors from './Components/Doctors'
 
 function App() {
   return <>
@@ -12,6 +13,7 @@ function App() {
     <Services />
     <Places />
     <Departments />
+    <Doctors />
   </>
 }
 

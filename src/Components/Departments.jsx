@@ -49,7 +49,7 @@ const DepartmentItems = [
     },
 ];
 
-const deparmtentImage = "src/Images/dept-1.jpg.webp"
+const deparmtentImage = "/images/dept-1.jpg.webp"
 
 export default function Departments() {
     return <>

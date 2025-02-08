@@ -30,7 +30,7 @@ export default function Navbar() {
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             type="button"
-                            className="md:hidden p-2 w-10 h-10 text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                            className="md:hidden p-2 w-10 h-10 text-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                         >
                             <span className="sr-only">Open main menu</span>
                             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -45,7 +45,7 @@ export default function Navbar() {
                         {/* Close Button (X) - Only shown in mobile view */}
                         <button
                             onClick={() => setIsOpen(false)}
-                            className="absolute top-3 right-3 text-gray-500 dark:text-gray-400 md:hidden text-2xl"
+                            className="absolute top-3 right-3 text-gray-400 dark:text-gray-400 md:hidden text-2xl"
                         >
                             <i className="fa-solid fa-xmark"></i>
                         </button>

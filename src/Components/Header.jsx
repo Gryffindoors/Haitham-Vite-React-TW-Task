@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import AppointmentButton from './Fragments/Buttons'
 import Navbar from './Fragments/Navbar'
 import NavbarSticky from './Fragments/NavbarSticky'
-const bgImage = 'src/Images/bg_3.jpg.webp'
+const bgImage = '/images/bg_3.jpg.webp'
 
 
 export default function Header() {
-    const [isHidden, setIsHidden] = useState(false);
+    const [isHidden, setIsHidden] = useState(true);
 
     useEffect(() => {
         function handleScroll() {
@@ -35,7 +35,7 @@ export default function Header() {
                 <div className='px-20 flex flex-col gap-10 '>
                     <p className="uppercase font-bold text-blue-700">welcome to mediplus</p>
                     <h1 className='text-black font-black text-6xl'>We are here <br />for your Care</h1>
-                    <p className='text-gray-500 text-2xl'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
+                    <p className='text-gray-400 text-2xl'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
                     <AppointmentButton />
                 </div>
                 <div className='flex opacity-100 w-full'>

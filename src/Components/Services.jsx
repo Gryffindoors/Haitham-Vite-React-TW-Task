@@ -27,7 +27,7 @@ const ServiceItems = [
 
 export default function ServiceList() {
     return (
-        <div id='Services' className='w-full flex flex-col md:flex-row justify-center  bg-gray-200 py-5 px-10'>
+        <div id='Services' className='w-full flex flex-col md:flex-row justify-center  bg-gray-200 py-0 px-10'>
             {/* Services Section */}
             <div className='w-full md:w-[60%] flex ps-10 flex-col gap-5 py-5 text-center md:text-left'>
                 <h2 className='text-black font-black text-5xl'>Our Services</h2>

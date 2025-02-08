@@ -7,6 +7,13 @@ export default function AppointmentButton() {
         </button>
     </>
 }
+function BookButton() {
+    return <>
+        <button className='bg-blue-500 text-white py-2 px-3 rounded-full w-fit '>
+            <a href="#">Book Now</a>
+        </button>
+    </>
+}
 
 function ContactButton() {
     return <>
@@ -16,4 +23,4 @@ function ContactButton() {
     </>
 }
 
-export { ContactButton }    
+export { ContactButton, BookButton }    

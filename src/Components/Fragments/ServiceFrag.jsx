@@ -1,4 +1,5 @@
 import React from "react";
+import { BookButton } from "./Buttons";
 
 // Clock Icon Component (Converted from TypeScript to Regular React)
 const IconTablerClock24 = ({ height = "1.5em", strokeWidth = "2", fill = "none", ...props }) => (
@@ -31,7 +32,7 @@ const ServiceFrag = ({ Icon, ServiceName, ServiceDesc }) => {
             {/* Service Details */}
             <div className="flex flex-col gap-2 w-4/5">
                 <h4 className="text-2xl font-bold">{ServiceName}</h4>
-                <p className="text-gray-500 text-lg leading-8">{ServiceDesc}</p>
+                <p className="text-gray-400 text-lg leading-8">{ServiceDesc}</p>
             </div>
         </div>
     );
@@ -49,15 +50,45 @@ const ServiceFragVert = ({ Icon, ServiceName, ServiceDesc }) => {
             <h2 className="text-2xl font-bold text-center group-hover:text-white">{ServiceName}</h2>
 
             {/* Service Description with spacing */}
-            <p className="text-lg text-gray-500 text-center mb-4 group-hover:text-white">
+            <p className="text-lg text-gray-400 text-center mb-4 group-hover:text-white">
                 {ServiceDesc}
             </p>
         </div>
     </>
 };
 
+const StaffFrag = ({ name, speciality, Message, image, twitter, facebook, google, instagram }) => {
+    return <>
+        <div className="group flex flex-col items-center gap-5">
+            <div className="overflow-hidden w-full h-full relative">
+                {/* Image */}
+                <img src={image} alt={name} className="w-full transition-all duration-300 group-hover:translate-y-[-25px] group-hover:opacity-50"
+                />
+
+                {/* Social Media Icons */}
+                <div className="absolute bottom-0 left-0 right-0 flex items-center justify-around bg-white py-3 px-24 translate-y-full group-hover:translate-y-0 transition-all duration-300">
+                    <a href={twitter}><i className="fa-brands fa-twitter text-red-400 fa-md"></i></a>
+                    <a href={facebook}><i className="fa-brands fa-facebook-f text-red-400 fa-md"></i></a>
+                    <a href={google}><i className="fa-brands fa-google-plus-g text-red-400 fa-md"></i></a>
+                    <a href={instagram}><i className="fa-brands fa-instagram text-red-400 fa-md"></i></a>
+                </div>
+            </div>
+
+            {/* Name & Details */}
+            <div className="flex flex-col items-center gap-3">
+                <h4 className="text-black font-bold text-2xl group-hover:text-blue-700">{name}</h4>
+                <p className="uppercase text-blue-700 text-lg">{speciality}</p>
+                <p className="text-gray-400 text-center">{Message}</p>
+            </div>
+            <BookButton />
+        </div>
+
+    </>
+    
+};
+
 // Export Components
 export default ServiceFrag;
-export { IconTablerClock24, ServiceFragVert };
+export { IconTablerClock24, ServiceFragVert, StaffFrag };
 
 

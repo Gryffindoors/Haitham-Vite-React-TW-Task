@@ -1,7 +1,7 @@
 import React from 'react'
 import AppointmentButton, { ContactButton } from './Fragments/Buttons'
 
-const aboutImage = "src/Images/about.jpg.webp"
+const aboutImage = "/images/about.jpg.webp"
 
 export default function About() {
     return <>
@@ -21,7 +21,7 @@ export default function About() {
             <div className="w-full md:w-3/5 flex flex-col gap-10 py-10 text-center md:text-left">
                 <div className='w-3/5 flex flex-col gap-10 '>
                     <h2 className='text-5xl text-black font-black'>We Are <span className='text-blue-700'>Mediplus</span> A<br /> Medical Clinic</h2>
-                    <p className='text-gray-500 text-lg'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p className='text-gray-400 text-lg'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                 </div>
                 <div className='flex flex-wrap justify-center md:justify-start gap-5'>
                     <AppointmentButton />
