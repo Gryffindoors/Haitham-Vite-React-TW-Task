@@ -7,7 +7,7 @@ export default function FunFacts() {
     return <>
 
         <div className="relative w-full overflow-hidden">
-            <img src={bgImage} alt="Fun Facts" className='absolute -z-10 w-full -top-[80px] opacity-80' />
+            <img loading="lazy"  src={bgImage} alt="Fun Facts" className='absolute -z-10 w-full -top-[80px] opacity-80' />
             <div className="flex bg-blue-500/50 w-full gap-10">
                 <div className="flex flex-col items-start justify-center gap-10 ps-35 py-20">
                     <p className="uppercase text-white font-bold text-lg">fun facts</p>

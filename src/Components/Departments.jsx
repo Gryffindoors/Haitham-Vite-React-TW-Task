@@ -56,7 +56,7 @@ export default function Departments() {
         <div className="w-full" id='Departments'>
             <div className="flex">
                 <div className="hidden md:block w-2/5 relative overflow-hidden">
-                    <img
+                    <img loading="lazy" 
                         src={deparmtentImage}
                         alt="we welcome you"
                         className="object-cover h-[120%] absolute -top-28 w-full"

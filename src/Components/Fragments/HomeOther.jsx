@@ -28,7 +28,7 @@ const HeaderOther = ({ title, link = [], image }) => {
             <NavbarSticky isHidden={isHidden} />
 
             <div id="Home" className="relative w-full h-fit flex justify-between items-center">
-                <img src={image} alt="header-background" className="absolute -z-10 -top-25 w-full h-fit object-cover opacity-100" />
+                <img loading="lazy"  src={image} alt="header-background" className="absolute -z-10 -top-25 w-full h-fit object-cover opacity-100" />
 
                 <div className="w-4/5 flex flex-2 flex-row items-end justify-between p-10 mt-56 bg-transparent">
                     <div className="px-20 flex flex-col gap-6">

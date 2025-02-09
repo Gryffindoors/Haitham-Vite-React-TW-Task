@@ -11,7 +11,7 @@ export default function About() {
                 <div className='flex overflow-hidden h-full'>
                     <div className="min-w-[20%] "></div>
                     <div className='h-full overflow-hidden'>
-                        <img src={aboutImage} alt="Doctors at Mediplus Clinic" className='-z-10 w-full' />
+                        <img loading="lazy"  src={aboutImage} alt="Doctors at Mediplus Clinic" className='-z-10 w-full' />
                     </div>
                     <div className="w-1/5"></div>
                 </div>

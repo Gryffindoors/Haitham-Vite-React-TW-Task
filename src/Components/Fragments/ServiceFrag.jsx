@@ -81,7 +81,7 @@ const StaffFrag = ({ name, speciality, Message, image, twitter, facebook, google
         <div className="group flex flex-col items-center gap-5">
             <div className="overflow-hidden w-full h-full relative">
                 {/* Image */}
-                <img src={image} alt={name} className="w-full transition-all duration-300 group-hover:translate-y-[-25px] group-hover:opacity-50"
+                <img loading="lazy"  src={image} alt={name} className="w-full transition-all duration-300 group-hover:translate-y-[-25px] group-hover:opacity-50"
                 />
 
                 {/* Social Media Icons */}
@@ -109,7 +109,7 @@ const StaffFrag = ({ name, speciality, Message, image, twitter, facebook, google
 const BlogFrag = ({ image, date, op, replies, title, exerpt }) => {
     return <>
         <div className="flex flex-col bg-white p-0">
-            <img src={image} alt="Our Blog" className='w-full' />
+            <img loading="lazy"  src={image} alt="Our Blog" className='w-full' />
             <div className="flex flex-row content-around justify-center gap-x-5 px-3 pb-5">
                 <p className="uppercase text-red-400"><Link to="#">{date}</Link></p>
                 <p className="uppercase text-red-400"><Link to="#">{op}</Link></p>

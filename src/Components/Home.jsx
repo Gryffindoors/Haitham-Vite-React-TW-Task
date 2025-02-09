@@ -30,7 +30,7 @@ export default function Header() {
          {/* Pass the scroll state to NavbarSticky */}
          <NavbarSticky isHidden={isHidden} />
         <div id='Home' className='w-full flex justify-between items-center'>
-            <img src={bgImage} alt="doctors" className='absolute -z-10 top-0 w-full opacity-50' />
+            <img loading="lazy"  src={bgImage} alt="doctors" className='absolute -z-10 top-0 w-full opacity-50' />
             <div className="w-4/5 flex flex-2 flex-row items-center justify-between p-10 bg-transparent">
                 <div className='px-20 flex flex-col gap-10 '>
                     <p className="uppercase font-bold text-blue-700">welcome to mediplus</p>
