@@ -5,6 +5,8 @@ import Places from '../Components/Fragments/Places'
 import Departments from '../Components/Departments'
 import Doctors from '../Components/Doctors'
 import Header from '../Components/Home'
+import FunFacts from '../Components/FunFacts'
+import Blog from '../Components/Blog'
 
 export default function Main() {
     return <>
@@ -14,5 +16,7 @@ export default function Main() {
         <Places />
         <Departments />
         <Doctors />
+        <FunFacts />
+        <Blog />
     </>
 }

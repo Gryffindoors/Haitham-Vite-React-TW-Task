@@ -1,5 +1,24 @@
 import React from "react";
-import { BookButton } from "./Buttons";
+import { BookButton, ReadMore } from "./Buttons";
+import { Link } from "react-router-dom";
+
+
+
+const MessageIcon = ({ size = "1em" }) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            width={size}
+            height={size}
+            fill="currentColor"  // Matches text color
+            className="inline-block align-middle"
+        >
+            <path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z" />
+        </svg>
+    );
+};
+
 
 // Clock Icon Component (Converted from TypeScript to Regular React)
 const IconTablerClock24 = ({ height = "1.5em", strokeWidth = "2", fill = "none", ...props }) => (
@@ -84,11 +103,31 @@ const StaffFrag = ({ name, speciality, Message, image, twitter, facebook, google
         </div>
 
     </>
-    
+
 };
+
+const BlogFrag = ({ image, date, op, replies, title, exerpt }) => {
+    return <>
+        <div className="flex flex-col bg-white p-0">
+            <img src={image} alt="Our Blog" className='w-full' />
+            <div className="flex flex-row content-around justify-center gap-x-5 px-3 pb-5">
+                <p className="uppercase text-red-400"><Link to="#">{date}</Link></p>
+                <p className="uppercase text-red-400"><Link to="#">{op}</Link></p>
+                <p className="uppercase text-red-400"><Link to="#"><MessageIcon /> {replies}</Link></p>
+            </div>
+            <div className="flex flex-col gap-1 px-3 pb-5">
+                <h4 className='text-2xl'>{title}</h4>
+                <p className='text-gray-500 text-lg'>{exerpt}</p>
+                <ReadMore />
+            </div>
+        </div>
+
+    </>
+
+}
 
 // Export Components
 export default ServiceFrag;
-export { IconTablerClock24, ServiceFragVert, StaffFrag };
+export { IconTablerClock24, ServiceFragVert, StaffFrag, BlogFrag };
 
 
