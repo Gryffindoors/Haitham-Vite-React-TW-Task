@@ -8,6 +8,8 @@ import Header from '../Components/Home'
 import FunFacts from '../Components/FunFacts'
 import Blog from '../Components/Blog'
 import TestimonialPage from '../Components/Testimonlials'
+import Contact from '../Components/Contact'
+import Footer from '../Components/Footer'
 
 export default function Main() {
     return <>
@@ -20,5 +22,7 @@ export default function Main() {
         <FunFacts />
         <Blog />
         <TestimonialPage />
+        <Contact />
+        <Footer />
     </>
 }
