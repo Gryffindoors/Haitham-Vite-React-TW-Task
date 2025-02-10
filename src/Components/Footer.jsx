@@ -12,8 +12,8 @@ const bgImage = '/images/footer.webp'
 export default function Footer() {
     return <>
 
-        <div className="grid grid-cols-5 relative gap-5">
-            <img src={bgImage} alt="Our Links" className="absolute -z-10 top-0 w-full opacity-50" />
+        <div className="grid grid-cols-5 relative gap-5 h-fit overflow-hidden py-25">
+            <img src={bgImage} alt="Our Links" className="absolute -z-10 -top-52 w-full opacity-50" />
             <div className="flex flex-col gap-5 content-around h-full p-3">
                 <h3 className='text-black text-2xl'>Mediplus</h3>
                 <p className='text-black  text-sm'>Far far away, behind the word mountains, far from the countries.</p>
@@ -31,7 +31,7 @@ export default function Footer() {
                             <div>
                                 <ul className="list-none">
                                     {list.links.map((item, subIndex) => (
-                                        <li key={subIndex} className='leading-10 text-sm text-blue-500'><i className="fa-solid fa-right-long w-7 text-blue-500"></i>
+                                        <li key={subIndex} className='leading-10 text-sm'><i className="fa-solid fa-right-long w-7 text-blue-500"></i>
                                         <Link to="#">{item}</Link>
                                         </li>
 
