@@ -3,12 +3,15 @@ import { Link } from "react-router-dom";
 import Navbar from '../Components/Fragments/Navbar';
 import Footer from '../Components/Footer';
 import Contact from '../Components/Contact';
+import SEO from '../Components/Fragments/SEO';
 
 export default function NotFound() {
   return <>
+    <SEO title="Apologies" metaDescription="Page not found" />
+
     <div className="relative">
       <div className="w-full absolute z-10">
-              <Navbar />
+        <Navbar />
       </div>
       <div className=" h-screen flex flex-col items-center justify-center text-center bg-gray-100">
         <h1 className="text-6xl font-extrabold text-blue-600">404</h1>

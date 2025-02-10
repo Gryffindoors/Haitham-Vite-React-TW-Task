@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import BlogDetails from '../Components/BlogDetails';
 import Contact from '../Components/Contact';
 import Footer from '../Components/Footer';
+import SEO from '../Components/Fragments/SEO';
 
 export default function SingleBlog() {
     const location = useLocation();
@@ -12,11 +13,13 @@ export default function SingleBlog() {
     const PageData = {
         image: '/images/bg_1.jpg.webp',
         title: 'Blog Details',
-        link: pathNames, 
+        link: pathNames,
     };
 
     return (
         <>
+
+            <SEO title="Medi-Plus Blog" metaDescription="Medi-Plus Blog Posts" />
             <HeaderOther {...PageData} />
             <About />
             <BlogDetails />
