@@ -3,6 +3,8 @@ import About from '../Components/About';
 import HeaderOther from '../Components/Fragments/HomeOther';
 import { useLocation } from "react-router-dom";
 import BlogDetails from '../Components/BlogDetails';
+import Contact from '../Components/Contact';
+import Footer from '../Components/Footer';
 
 export default function SingleBlog() {
     const location = useLocation();
@@ -18,6 +20,8 @@ export default function SingleBlog() {
             <HeaderOther {...PageData} />
             <About />
             <BlogDetails />
+            <Contact />
+            <Footer />
         </>
     );
 }

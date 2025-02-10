@@ -3,6 +3,8 @@ import About from '../Components/About';
 import Services from '../Components/Services';
 import HeaderOther from '../Components/Fragments/HomeOther';
 import { useLocation } from "react-router-dom";
+import Contact from '../Components/Contact';
+import Footer from '../Components/Footer';
 
 export default function Appoint() {
     const location = useLocation();
@@ -18,6 +20,8 @@ export default function Appoint() {
             <HeaderOther {...PageData} />
             <About />
             <Services />
+            <Contact />
+            <Footer />
         </>
     );
 }

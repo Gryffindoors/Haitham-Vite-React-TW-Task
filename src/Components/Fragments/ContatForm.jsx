@@ -20,7 +20,7 @@ export default function ContactForm() {
           resetForm();
         }}
       >
-        <Form className="w-4/5 m-auto flex flex-col gap-4 w-full">
+        <Form className="m-auto flex flex-col gap-4 w-full">
 
           {/* Full Name */}
           <div>

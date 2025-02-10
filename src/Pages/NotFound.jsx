@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import Navbar from '../Components/Fragments/Navbar';
+import Footer from '../Components/Footer';
+import Contact from '../Components/Contact';
 
 export default function NotFound() {
   return <>
@@ -14,6 +16,8 @@ export default function NotFound() {
         <Link to="/" className="mt-5 px-5 py-2 bg-blue-500 text-white rounded-lg">Go Home</Link>
       </div>
     </div>
+    <Contact />
+    <Footer />
 
   </>
 }
