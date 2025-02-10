@@ -2,3 +2,10 @@
 html {
     scroll-behavior:smooth;
 }
+.swiper-button-next {
+    right: -50px !important; /* Moves the right arrow further outside */
+}
+
+.swiper-button-prev {
+    left: -50px !important; /* Moves the left arrow further outside */
+}

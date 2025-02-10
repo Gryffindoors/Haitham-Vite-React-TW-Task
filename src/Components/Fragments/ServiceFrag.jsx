@@ -108,14 +108,14 @@ const StaffFrag = ({ name, speciality, Message, image, twitter, facebook, google
 
 const BlogFrag = ({ image, date, op, replies, title, exerpt }) => {
     return <>
-        <div className="flex flex-col bg-white p-0">
+        <div className="flex flex-col bg-transparent p-0">
             <img loading="lazy"  src={image} alt="Our Blog" className='w-full' />
-            <div className="flex flex-row content-around justify-center gap-x-5 px-3 pb-5">
-                <p className="uppercase text-red-400"><Link to="#">{date}</Link></p>
-                <p className="uppercase text-red-400"><Link to="#">{op}</Link></p>
-                <p className="uppercase text-red-400"><Link to="#"><MessageIcon /> {replies}</Link></p>
+            <div className="flex flex-row content-around justify-start gap-x-5 pe-3 pb-5">
+                <p className="uppercase text-red-400 text-sm mt-5 font-medium"><Link to="#">{date}</Link></p>
+                <p className="uppercase text-red-400 text-sm mt-5 font-medium"><Link to="#">{op}</Link></p>
+                <p className="uppercase text-red-400 text-sm mt-5 font-medium"><Link to="#"><MessageIcon /> {replies}</Link></p>
             </div>
-            <div className="flex flex-col gap-1 px-3 pb-5">
+            <div className="flex flex-col gap-1 pe-3 pb-5">
                 <h4 className='text-2xl'>{title}</h4>
                 <p className='text-gray-500 text-lg'>{exerpt}</p>
                 <ReadMore />
@@ -126,8 +126,22 @@ const BlogFrag = ({ image, date, op, replies, title, exerpt }) => {
 
 }
 
+const BlogPost = ({id, title, fullMessage, image, exerpt}) =>{
+return <>
+    <div className="w-full" id={"blog"+id} >
+        <h1 className="text-2xl text-black">{"# "+ id + ". " + title}</h1>
+    <p className='text-gray-500 text-lg'>{exerpt}</p>
+    <img loading="lazy" src={image}  alt={title} className="w-full" />
+    <p className='text-gray-500 text-lg'>{fullMessage}</p>
+    </div>
+    
+</>
+
+ 
+}
+
 // Export Components
 export default ServiceFrag;
-export { IconTablerClock24, ServiceFragVert, StaffFrag, BlogFrag };
+export { IconTablerClock24, ServiceFragVert, StaffFrag, BlogFrag, BlogPost };
 
 

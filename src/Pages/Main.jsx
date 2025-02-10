@@ -7,6 +7,7 @@ import Doctors from '../Components/Doctors'
 import Header from '../Components/Home'
 import FunFacts from '../Components/FunFacts'
 import Blog from '../Components/Blog'
+import TestimonialPage from '../Components/Testimonlials'
 
 export default function Main() {
     return <>
@@ -18,5 +19,6 @@ export default function Main() {
         <Doctors />
         <FunFacts />
         <Blog />
+        <TestimonialPage />
     </>
 }
